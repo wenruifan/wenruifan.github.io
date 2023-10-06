@@ -82,6 +82,6 @@ email: 'wenrui.fan@sheffield.ac.uk'
 highlight_name: true
 ---
 
-Wenrui Fan is a AI Research Engineer (AIRE) in the University of Sheffield under the lead of [Haiping Lu](https://haipinglu.github.io/). His research interests include 
+Wenrui Fan is a [AI Research Engineer (AIRE)](https://shef-aire.github.io/) in the University of Sheffield under the lead of [Haiping Lu](https://haipinglu.github.io/). His research interests include 
 computer vision, deep learning, multi-modality, meta-learning and causal learning. 
 {style="text-align: justify;"}
