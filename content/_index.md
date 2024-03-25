@@ -62,7 +62,7 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: AI Research Engineer
+        - title: AI Research Engineer/PhD Student
           company: The University of Sheffield
           company_url: ''
           company_logo: UoS
