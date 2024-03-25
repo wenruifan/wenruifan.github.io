@@ -76,7 +76,7 @@ sections:
               * Multi-Modal AI
               * Contribute to PyKale
               * Meta-learning
-        - title: Research Fellow
+        - title: Algorithm Researcher
           company: HITCQ
           company_url: ''
           company_logo: hit
