@@ -311,7 +311,10 @@ sections:
     content:
       title: Friends and Collaborators
       subtitle: 
-      text: 
+      text:
+        <ul>
+          <li><a href="https://shef-aire.github.io/">AIRE Group</a> - A new but enthusiastic research group on multimodal AI.</li>
+        </ul> 
         <ul>
           <li><a href="https://funnywii.com">Funny Wii</a> - An excellent engineer and a good friend.</li>
         </ul>
