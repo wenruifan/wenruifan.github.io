@@ -65,7 +65,7 @@ sections:
         - title: AI Research Engineer
           company: The University of Sheffield
           company_url: ''
-          company_logo: building-columns-solid
+          company_logo: UoS
           location: Sheffield, UK
           date_start: '2023-09-04'
           date_end: ''
@@ -79,7 +79,7 @@ sections:
         - title: Research Fellow
           company: HITCQ
           company_url: ''
-          company_logo: building-columns-solid
+          company_logo: hit
           location: Chongqing, CN
           date_start: '2022-11-01'
           date_end: '2023-07-09'
@@ -90,9 +90,9 @@ sections:
               * Modelling
               * Industrial Anomaly Detection
         - title: MSc
-          company: The University of Sheffield
+          company: University of Sheffield
           company_url: ''
-          company_logo: building-columns-solid
+          company_logo: UoS
           location: Sheffield, UK
           date_start: '2021-09-27'
           date_end: '2022-09-27'
@@ -100,7 +100,7 @@ sections:
         - title: BSc
           company: Beijing Institute of Technology
           company_url: ''
-          company_logo: building-columns-solid
+          company_logo: bit
           location: Beijing, CN
           date_start: '2017-08-27'
           date_end: '2021-07-02'
