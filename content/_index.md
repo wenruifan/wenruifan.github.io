@@ -307,4 +307,16 @@ sections:
           captcha: false
     design:
       columns: '2'
+  - block: markdown
+    content:
+      title: Friends and Collaborators
+      subtitle: 
+      text: 
+        <ul>
+          <li><a href="https://funnywii.com">Funny Wii</a> - An excellent engineer and a good friend.</li>
+        </ul>
+    design:
+      # See Page Builder docs for all section customization options.
+      # Choose how many columns the section has. Valid values: '1' or '2'.
+      columns: '2'
 ---
