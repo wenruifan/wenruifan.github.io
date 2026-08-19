@@ -1,0 +1,84 @@
+{
+  "profile_id": "0O1EN4QAAAAJ",
+  "profile_url": "https://scholar.google.com/citations?user=0O1EN4QAAAAJ&hl=en",
+  "last_synced_at": null,
+  "publications": [
+    {
+      "title": "Geometry-aware line graph transformer pretraining for molecular property prediction",
+      "authors": "P Bai, X Liu, W Fan, T Jiang, WK Cheung, H Lu",
+      "publication": "IEEE Transactions on Neural Networks and Learning Systems",
+      "year": "2026",
+      "cited_by": 7,
+      "scholar_url": "https://scholar.google.com/scholar?q=Geometry-aware+line+graph+transformer+pretraining+for+molecular+property+prediction"
+    },
+    {
+      "title": "Foundation-model-boosted multimodal learning for fMRI-based neuropathic pain drug response prediction",
+      "authors": "W Fan, LMR Rizky, J Zhang, C Chen, H Lu, K Teh, D Selvarajah, S Zhou",
+      "publication": "International Conference on Medical Image Computing and Computer-Assisted Intervention",
+      "year": "2025",
+      "cited_by": 1,
+      "scholar_url": "https://scholar.google.com/scholar?q=Foundation-Model-Boosted+Multimodal+Learning+for+fMRI-based+Neuropathic+Pain+Drug+Response+Prediction",
+      "source_url": "https://arxiv.org/abs/2503.00210",
+      "local_url": "/publications/foundation-model-neuropathic-pain/"
+    },
+    {
+      "title": "Classifying the stoichiometry of virus-like particles with interpretable machine learning",
+      "authors": "J Zhang, X Liu, W Wu, S Tabakhi, W Fan, S Zhou, KL Tee, TS Wong, H Lu",
+      "publication": "47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC 2025)",
+      "year": "2025",
+      "cited_by": 2,
+      "scholar_url": "https://scholar.google.com/scholar?q=Classifying+the+Stoichiometry+of+Virus-like+Particles+with+Interpretable+Machine+Learning",
+      "source_url": "https://arxiv.org/abs/2502.12049",
+      "local_url": "/publications/stoic-iml/"
+    },
+    {
+      "title": "Multimodal latent fusion of ECG leads for early assessment of pulmonary hypertension",
+      "authors": "MNI Suvon, S Zhou, PC Tripathi, W Fan, S Alabed, B Khanal, V Osmani, et al.",
+      "publication": "arXiv preprint arXiv:2503.13470",
+      "year": "2025",
+      "cited_by": 1,
+      "scholar_url": "https://scholar.google.com/scholar?q=Multimodal+Latent+Fusion+of+ECG+Leads+for+Early+Assessment+of+Pulmonary+Hypertension",
+      "source_url": "https://arxiv.org/abs/2503.13470"
+    },
+    {
+      "title": "Multimodal variational autoencoder for low-cost cardiac hemodynamics instability detection",
+      "authors": "MNI Suvon, PC Tripathi, W Fan, S Zhou, X Liu, S Alabed, V Osmani, et al.",
+      "publication": "International Conference on Medical Image Computing and Computer-Assisted Intervention",
+      "year": "2024",
+      "cited_by": 11,
+      "scholar_url": "https://scholar.google.com/scholar?q=Multimodal+variational+autoencoder+for+low-cost+cardiac+hemodynamics+instability+detection",
+      "source_url": "https://arxiv.org/abs/2403.13658",
+      "local_url": "/publications/cardio-vae/"
+    },
+    {
+      "title": "Co-salient object detection via discriminative prototypes contrast",
+      "authors": "J Wang, B Chen, W Fan, Y Liu",
+      "publication": "ICASSP 2024 – IEEE International Conference on Acoustics, Speech and Signal Processing",
+      "year": "2024",
+      "cited_by": 5,
+      "scholar_url": "https://scholar.google.com/scholar?q=Co-salient+object+detection+via+discriminative+prototypes+contrast",
+      "source_url": "https://doi.org/10.1109/ICASSP48485.2024.10446685",
+      "local_url": "/publications/co-salient-prototypes/"
+    },
+    {
+      "title": "MeDSLIP: medical dual-stream language-image pre-training with pathology-anatomy semantic alignment",
+      "authors": "W Fan, MNI Suvon, S Zhou, X Liu, S Alabed, V Osmani, AJ Swift, C Chen, et al.",
+      "publication": "arXiv preprint arXiv:2403.10635",
+      "year": "2024",
+      "cited_by": 9,
+      "scholar_url": "https://scholar.google.com/scholar?q=MeDSLIP+Medical+Dual-Stream+Language-Image+Pre-training+with+Pathology-Anatomy+Semantic+Alignment",
+      "source_url": "https://arxiv.org/abs/2403.10635",
+      "local_url": "/publications/medslip/"
+    },
+    {
+      "title": "Path planning for mobile robot in 3D environment based on ant colony algorithm",
+      "authors": "F Wenrui",
+      "publication": "Journal of Physics: Conference Series 1982 (1), 012095",
+      "year": "2021",
+      "cited_by": 1,
+      "scholar_url": "https://scholar.google.com/scholar?q=Path+planning+for+mobile+robot+in+3D+environment+based+on+ant+colony+algorithm",
+      "source_url": "https://doi.org/10.1088/1742-6596/1982/1/012095",
+      "local_url": "/publications/path-planning/"
+    }
+  ]
+}

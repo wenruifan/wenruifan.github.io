@@ -1,0 +1,38 @@
+{{ $block := .wcBlock }}
+{{ $count := $block.content.count | default 6 }}
+{{ $showMore := true }}
+{{ if isset $block.content "show_more" }}
+  {{ $showMore = $block.content.show_more }}
+{{ end }}
+{{ $blogPages := where site.RegularPages "Section" "blog" }}
+{{ $newsPages := where $blogPages "Params.tags" "intersect" (slice "News") }}
+{{ $newsPages = first $count ($newsPages.ByDate.Reverse) }}
+
+<div class="max-w-4xl mx-auto px-6">
+  {{ with $block.content.title }}
+    <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center mb-8">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">{{ . }}</h2>
+    </div>
+  {{ end }}
+
+  <div class="divide-y divide-gray-200 dark:divide-white/10 border-y border-gray-200 dark:border-white/10">
+    {{ range $newsPages }}
+      <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-5 py-3">
+        <time class="shrink-0 text-sm text-gray-500 dark:text-gray-400 sm:w-28" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "2 Jan 2006" }}
+        </time>
+        <a class="font-medium text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-300 transition-colors" href="{{ .RelPermalink }}">
+          {{ .Title }}
+        </a>
+      </div>
+    {{ end }}
+  </div>
+
+  {{ if $showMore }}
+    {{ $moreURL := $block.content.more_url | default "/news/" }}
+    {{ $moreText := $block.content.more_text | default "All news →" }}
+    <div class="mt-5 text-right">
+      <a class="font-medium text-primary-600 dark:text-primary-300 hover:underline" href="{{ $moreURL | relURL }}">{{ $moreText }}</a>
+    </div>
+  {{ end }}
+</div>
