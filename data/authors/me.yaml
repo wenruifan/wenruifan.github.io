@@ -1,0 +1,109 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Wenrui Fan
+  given: Wenrui
+  family: Fan
+  alternate: 范文睿
+  pronunciation: ''
+  pronouns: he/him
+status:
+  icon: "☕️"
+role: AI Research Engineer & PhD Student
+bio: |
+  Wenrui Fan is an AI Research Engineer and PhD student at the
+  University of Sheffield, supervised by Prof Haiping Lu. His research focuses
+  on multimodal AI, AI for science, agentic AI, AI for healthcare,
+  biomedical AI, and AI-driven protein design.
+
+affiliations:
+  - name: University of Sheffield
+    url: https://www.sheffield.ac.uk/
+  - name: AI Research Engineering (AIRE)
+    url: https://shef-aire.github.io/
+
+links:
+  - icon: at-symbol
+    url: mailto:wenrui.fan@sheffield.ac.uk
+    label: Email
+  - icon: brands/github
+    url: https://github.com/wenruifan
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/wenrui-fan-a7b68b290/
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=0O1EN4QAAAAJ
+  - icon: academicons/orcid
+    url: https://orcid.org/0009-0007-1394-0092
+  - icon: brands/x
+    url: https://x.com/WinslowFan0317
+
+interests:
+  - Multimodal AI
+  - AI for science
+  - Agentic AI
+  - AI for healthcare
+  - AI for biomedical
+  - AI-driven protein design
+
+education:
+  - degree: PhD in Computer Science
+    institution: University of Sheffield, UK
+    start: 2023-09-04
+    summary: Research on multimodal AI and foundation models for healthcare and scientific discovery, supervised by Prof Haiping Lu.
+  - degree: MSc in Robotics (Distinction)
+    institution: University of Sheffield, UK
+    start: 2021-09-27
+    end: 2022-09-27
+  - degree: BSc in Aerospace Engineering
+    institution: Beijing Institute of Technology, China
+    start: 2017-08-27
+    end: 2021-07-02
+
+experience:
+  - role: AI Research Engineer & PhD Student
+    org: University of Sheffield
+    start: 2023-09-04
+    summary: |
+      Develop multimodal and foundation-model methods for medical imaging,
+      neuroimaging, Parkinson's disease, neuropathic pain, and AI for science.
+      Contribute research software and reproducible machine-learning workflows.
+    button:
+      text: University profile
+      url: https://sheffield.ac.uk/cs/people/research-staff/wenrui-fan
+      icon: hero/arrow-top-right-on-square
+  - role: Algorithm Researcher
+    org: HITCQ
+    start: 2022-11-01
+    end: 2023-07-09
+    summary: Developed deep-learning models for industrial anomaly detection and related applied AI problems.
+
+skills:
+  - name: Research
+    items:
+      - label: Multimodal Machine Learning
+        level: 5
+      - label: Medical Imaging & Neuroimaging
+        level: 5
+      - label: Foundation Models
+        level: 4
+      - label: Causal & Meta-learning
+        level: 4
+  - name: Engineering
+    items:
+      - label: Python & PyTorch
+        level: 5
+      - label: Reproducible Research Software
+        level: 4
+      - label: MATLAB
+        level: 3
+
+languages:
+  - name: Mandarin Chinese
+    level: 5
+    label: Native
+  - name: English
+    level: 4
+    label: Fluent
+
+awards: []

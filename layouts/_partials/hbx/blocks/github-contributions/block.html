@@ -1,0 +1,94 @@
+{{ $block := .wcBlock }}
+{{ $data := hugo.Data.github_contributions }}
+
+<div class="max-w-6xl mx-auto px-6">
+  {{ with $block.content.title }}
+    <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center mb-10">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">{{ . }}</h2>
+      {{ with $block.content.subtitle }}
+        <p class="text-lg text-gray-600 dark:text-gray-300 text-center">{{ . }}</p>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  {{ if $data }}
+    <div class="rounded-2xl border border-gray-200 dark:border-white/10 bg-white dark:bg-white/[0.03] p-5 md:p-7 shadow-sm">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
+        <div>
+          <p class="text-3xl font-bold text-gray-900 dark:text-white">{{ $data.totalContributions }}</p>
+          <p class="text-gray-600 dark:text-gray-300">contributions in the last year</p>
+        </div>
+        <a class="font-medium text-primary-600 dark:text-primary-300 hover:underline" href="{{ $data.profileUrl }}" target="_blank" rel="noopener">
+          @{{ $data.login }} on GitHub ↗
+        </a>
+      </div>
+
+      <div class="overflow-x-auto pb-3" aria-label="GitHub contribution calendar">
+        <div class="inline-flex gap-[3px] min-w-max">
+          {{ range $data.weeks }}
+            <div class="grid grid-rows-7 gap-[3px]">
+              {{ range .contributionDays }}
+                {{ $levelClass := "bg-gray-100 dark:bg-white/10" }}
+                {{ if eq .contributionLevel "FIRST_QUARTILE" }}{{ $levelClass = "bg-green-200 dark:bg-green-900" }}{{ end }}
+                {{ if eq .contributionLevel "SECOND_QUARTILE" }}{{ $levelClass = "bg-green-400 dark:bg-green-700" }}{{ end }}
+                {{ if eq .contributionLevel "THIRD_QUARTILE" }}{{ $levelClass = "bg-green-600 dark:bg-green-500" }}{{ end }}
+                {{ if eq .contributionLevel "FOURTH_QUARTILE" }}{{ $levelClass = "bg-green-800 dark:bg-green-300" }}{{ end }}
+                <span
+                  class="block w-[11px] h-[11px] rounded-[2px] border border-black/5 dark:border-white/5 {{ $levelClass }}"
+                  style="grid-row: {{ add .weekday 1 }};"
+                  title="{{ .date }}: {{ .contributionCount }} contribution{{ if ne .contributionCount 1 }}s{{ end }}"
+                  aria-label="{{ .date }}: {{ .contributionCount }} contribution{{ if ne .contributionCount 1 }}s{{ end }}"
+                ></span>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-5">
+        <div class="rounded-xl bg-gray-50 dark:bg-white/5 p-4">
+          <p class="text-2xl font-semibold text-gray-900 dark:text-white">{{ $data.activity.commits }}</p>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Commit contributions</p>
+        </div>
+        <div class="rounded-xl bg-gray-50 dark:bg-white/5 p-4">
+          <p class="text-2xl font-semibold text-gray-900 dark:text-white">{{ $data.activity.pullRequests }}</p>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Pull requests</p>
+        </div>
+        <div class="rounded-xl bg-gray-50 dark:bg-white/5 p-4">
+          <p class="text-2xl font-semibold text-gray-900 dark:text-white">{{ $data.activity.reviews }}</p>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Code reviews</p>
+        </div>
+        <div class="rounded-xl bg-gray-50 dark:bg-white/5 p-4">
+          <p class="text-2xl font-semibold text-gray-900 dark:text-white">{{ $data.activity.issues }}</p>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Issues</p>
+        </div>
+      </div>
+
+      {{ if gt $data.restrictedContributions 0 }}
+        <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+          The yearly total includes {{ $data.restrictedContributions }} anonymised private contributions reported by GitHub.
+        </p>
+      {{ end }}
+
+      {{ with first 5 $data.topRepositories }}
+        <div class="mt-6 pt-5 border-t border-gray-200 dark:border-white/10">
+          <p class="font-semibold text-gray-900 dark:text-white mb-3">Most active repositories</p>
+          <div class="flex flex-wrap gap-2">
+            {{ range . }}
+              <a class="inline-flex items-center gap-2 rounded-lg border border-gray-200 dark:border-white/10 px-3 py-2 text-sm hover:border-primary-400 hover:text-primary-600 dark:hover:text-primary-300 transition-colors" href="{{ .url }}" target="_blank" rel="noopener">
+                <span>{{ .name }}</span>
+                <span class="text-gray-500 dark:text-gray-400">{{ .commits }} commits</span>
+              </a>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+
+      <p class="mt-5 text-xs text-gray-500 dark:text-gray-400">
+        Source: GitHub GraphQL ContributionsCollection · Updated {{ time.Format "2 Jan 2006" (time.AsTime $data.generatedAt) }}
+      </p>
+    </div>
+  {{ else }}
+    <p class="text-center text-gray-600 dark:text-gray-300">GitHub activity data is temporarily unavailable.</p>
+  {{ end }}
+</div>
