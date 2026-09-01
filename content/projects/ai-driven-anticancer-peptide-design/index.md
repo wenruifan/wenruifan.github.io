@@ -1,5 +1,6 @@
 ---
 title: AI-driven anticancer peptide de novo design
+weight: 30
 summary: Developing AI methods to generate novel anticancer peptides while jointly considering activity, selectivity, safety, and developability.
 tags:
   - Peptide Design

@@ -1,5 +1,6 @@
 ---
 title: Multimodal AI for Parkinson's Disease
+weight: 40
 summary: Learning from genetics, biomarkers, environment, and clinical examinations to study Parkinson's disease mechanisms and progression.
 tags:
   - Medical AI

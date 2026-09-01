@@ -1,5 +1,6 @@
 ---
 title: Foundation Models for Neuropathic Pain
+weight: 50
 summary: Data-efficient multimodal learning for fMRI-based drug-response prediction.
 tags:
   - Medical AI
