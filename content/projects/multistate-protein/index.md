@@ -1,5 +1,6 @@
 ---
 title: Multistate Protein
+weight: 10
 summary: Studying protein AI across connected biological states through MuSProt, with MusBench for evaluating how models transfer knowledge and remain consistent between states.
 aliases:
   - /projects/multistage-protein/

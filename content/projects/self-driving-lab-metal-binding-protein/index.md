@@ -1,5 +1,6 @@
 ---
 title: Self-Driving Lab for Metal-Binding Protein Design
+weight: 20
 summary: An agentic closed-loop laboratory that generates, screens, verifies, and iteratively improves selective and stable metal-binding proteins.
 tags:
   - Protein Design
